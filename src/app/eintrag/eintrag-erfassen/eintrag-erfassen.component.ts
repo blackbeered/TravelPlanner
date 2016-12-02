@@ -8,17 +8,21 @@ import {EintragService} from "../shared/eintrag.service";
   styleUrls: ['./eintrag-erfassen.component.css']
 })
 export class EintragErfassenComponent implements OnInit {
-  eintrag: Eintrag = new Eintrag();
 
   constructor(private eintragService: EintragService) {
+
   }
 
   ngOnInit() {
   }
 
+  public getEintrag(): Eintrag {
+    return this.eintragService.getCurrentEintrag();
+  }
+
   public speichereEintrag(): void {
-    this.eintragService.speichereEintrag(this.eintrag);
-    this.eintrag = new Eintrag();
+    this.eintragService.speichereEintrag();
+
   }
 
 }

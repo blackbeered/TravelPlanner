@@ -1,11 +1,21 @@
 <div style="border:1px solid lightgray; padding:20px; margin:10px;">
   <h3>Eintragliste</h3>
 
-  <div class="eintrag-list">
-    <ul>
-      <li *ngFor="let eintrag of eintraege">
-        {{eintrag.titel}}<br/>{{eintrag.zeit | date:"dd.MM.yyyy - HH:mm"}} Uhr
-      </li>
-    </ul>
-  </div>
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let eintrag of eintraege">
+        <div class="row">
+          <div class="col-md-8 col-lg-8 col-sm-8">
+            <h5>{{eintrag.titel}}</h5>
+            <div>{{eintrag.zeit | date:"dd.MM.yyyy - HH:mm"}} Uhr</div>
+          </div>
+          <div class="col-md-4 col-lg-4 col-sm-4" style="text-align:right;">
+            <div style="font-size:8px;">{{eintrag.id}}</div>
+            <div (click)="editEintrag(eintrag)" style="cursor:pointer">edit</div>
+            <div (click)="deleteEintrag(eintrag)" style="cursor:pointer">delete</div>
+          </div>
+        </div>
+
+    </li>
+  </ul>
 </div>
+

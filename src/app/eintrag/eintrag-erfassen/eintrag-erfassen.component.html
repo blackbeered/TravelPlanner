@@ -2,12 +2,12 @@
   <h3>Eintrag erfassen</h3>
   <div>
     <label>Titel</label>
-    <input [(ngModel)]="eintrag.titel">
+    <input [(ngModel)]="getEintrag().titel">
   </div>
 
   <div>
     <label>Zeit</label>
-    <input [(ngModel)]="eintrag.zeit" type="datetime-local">
+    <input [(ngModel)]="getEintrag().zeit" type="datetime-local">
   </div>
 
   <div style="cursor:pointer" (click)="speichereEintrag()">
