@@ -17,7 +17,7 @@ export class EintragErfassenComponent implements OnInit {
   }
 
   public speichereEintrag(): void {
-    this.eintragService.ermittleEintraege().push(this.eintrag);
+    this.eintragService.speichereEintrag(this.eintrag);
     this.eintrag = new Eintrag();
   }
 
