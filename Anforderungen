@@ -1,0 +1,14 @@
+TravelPlanner
+
+- Als Nutzer möchte ich einen neuen Eintrag erstellen und dafür einen Titel vergeben
+
+- Als Nutzer möchte ich für einen Eintrag ein LocalDateTime erfassen
+- Als Nutzer möchte ich ein Datum in deutscher Zeit erfassen
+- Als Nutzer möchte ich einem Ereignis einen Ort auf einer Karte zuweisen und die Koordinaten speichern
+- Als Nutzer möchte ich beim Klick auf die Koordinaten eine Weiterleitung (GoogleMaps/Here WeGo)
+- Als Nutzer möchte ich einem Ergeignis Dokumente zuweisen
+- Als Nutzer möchte ich die Informationen aufbereitet sehen (Karte, Liste?)
+- Orte die erfasst wurden, sollen in die Sammlung in Here WeGo hinzugefügt werden (per REST API), damit ich auf die Orte auch offline auf mobilen Endgeräten zugreifen kann
+- Als nutzer möchte ich ein fertiges PDF haben, welches alle Informationen beinhaltet - hier ist noch genauer zu klären, wie weit das gehen soll
+- Als Nutzer möchte ich alle Gespeicherten Einträge in einer Liste sehen
+- Als Nutzer möchte ich Einträge speichern können

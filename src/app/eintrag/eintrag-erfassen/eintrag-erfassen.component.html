@@ -1,0 +1,16 @@
+<div style="border:1px solid lightgray; padding:20px; margin:10px;">
+  <h3>Eintrag erfassen</h3>
+  <div>
+    <label>Titel</label>
+    <input [(ngModel)]="eintrag.titel">
+  </div>
+
+  <div>
+    <label>Zeit</label>
+    <input [(ngModel)]="eintrag.zeit" type="datetime-local">
+  </div>
+
+  <div style="cursor:pointer" (click)="speichereEintrag()">
+    speichern
+  </div>
+</div>

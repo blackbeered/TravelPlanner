@@ -1,0 +1,11 @@
+<div style="border:1px solid lightgray; padding:20px; margin:10px;">
+  <h3>Eintragliste</h3>
+
+  <div class="eintrag-list">
+    <ul>
+      <li *ngFor="let eintrag of eintraege">
+        {{eintrag.titel}}<br/>{{eintrag.zeit | date:"dd.MM.yyyy - HH:mm"}} Uhr
+      </li>
+    </ul>
+  </div>
+</div>
