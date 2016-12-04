@@ -1,16 +1,21 @@
 <div style="border:1px solid lightgray; padding:20px; margin:10px;">
   <h3>Eintrag erfassen</h3>
-  <div>
-    <label>Titel</label>
-    <input [(ngModel)]="getEintrag().titel">
+  <div class="row">
+    <div class="col-md-6 col-lg-4 col-sm-12">
+      <div class="form-group">
+        <label for="eintrag-titel">Titel</label>
+        <input id="eintrag-titel" class="form-control" [(ngModel)]="getEintrag().titel" placeholder="Titel">
+      </div>
+      <div class="form-group">
+        <label for="eintrag-zeit">Zeit</label>
+        <input id="eintrag-zeit" class="form-control" [(ngModel)]="getEintrag().zeit" type="datetime-local"
+               placeholder="Zeit">
+      </div>
+      <div style="cursor:pointer" (click)="speichereEintrag()">
+        speichern
+      </div>
+    </div>
+
   </div>
 
-  <div>
-    <label>Zeit</label>
-    <input [(ngModel)]="getEintrag().zeit" type="datetime-local">
-  </div>
-
-  <div style="cursor:pointer" (click)="speichereEintrag()">
-    speichern
-  </div>
 </div>
